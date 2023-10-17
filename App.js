@@ -20,9 +20,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    //justifyContent: 'center',
     paddingTop: Platform.OS === 'android' ? Constants.statusBarHeight:0,
-    marginTop: 100,
+    marginTop: 20,
     padding: 20,
     
   },

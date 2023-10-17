@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React, { useEffect, useState } from 'react'
-import * as Location from './Weather';
+import * as Location from 'expo-location';
 import Weather from './Weather';
 
 export default function Position() {
@@ -11,7 +11,7 @@ export default function Position() {
 
 useEffect(() => {
     (async() => {
-        let {status} = await Location.requestForegroundPermissionsAsync()
+        let {status} = await Location.requestForegroundPermissionsAsync();
         console.log(status)
         try {
             if (status !== 'granted') {
